@@ -1,0 +1,26 @@
+language: ruby
+cache: bundler
+sudo: false
+
+before_install:
+  - gem install bundler
+
+bundler_args: --without yard guard benchmarks
+
+rvm:
+  - 2.5
+  - 2.6
+  - 2.7
+
+gemfile:
+  - Gemfile
+  - gemfiles/rails-5.0.gemfile
+  - gemfiles/rails-5.1.gemfile
+  - gemfiles/rails-5.2.gemfile
+  - gemfiles/rails-6.0.gemfile
+  - gemfiles/rails-master.gemfile
+
+matrix:
+  allow_failures:
+    - gemfile: gemfiles/rails-master.gemfile
+  fast_finish: true
