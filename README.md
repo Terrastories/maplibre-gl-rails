@@ -1,6 +1,6 @@
 # MapLibre for Rails
 
-[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](#license)
+[![Gem Version](https://badge.fury.io/rb/maplibre-gl-rails.svg)](http://badge.fury.io/rb/maplibre-gl-rails) [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](#license)
 
 `maplibre-gl-rails` provides the [Maplibre GL JS](https://github.com/maplibre/maplibre-gl-js) library as a Rails engine for
 use with the asset pipeline. It uses the same versioning as the Maplibre GL JS.
